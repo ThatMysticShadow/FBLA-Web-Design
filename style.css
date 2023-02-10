@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color:blue;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.topnav a {
+    padding: 10px 70px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+  }
+ 
+.text {
+    color: gray;
+    font-size: 36px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+.active {
+    background-color: #717171;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
